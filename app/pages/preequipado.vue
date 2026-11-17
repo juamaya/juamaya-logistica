@@ -1,38 +1,8 @@
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { useAlert } from '@/composables/useAlert'
 
-interface AlertInstance {
-  showAlert: () => Promise<void>
-}
-
-const alertRef = ref<AlertInstance | null>(null)
-
-// Datos dinámicos de la alerta
-const alerta = ref({
-  title: '',
-  image: '',
-  imageAlt: ''
-})
-
-// Configurar alerta según la tarjeta
-const abrirAlerta = async (
-  title: string,
-  image: string,
-  imageAlt: string
-) => {
-  alerta.value = {
-    title,
-    image,
-    imageAlt
-  }
-
-  // Esperar a que Vue actualice las props
-  await nextTick()
-
-  // Abrir SweetAlert2
-  alertRef.value?.showAlert()
-}
+const { alertRef, alerta, abrirAlerta } = useAlert()
 </script>
 
 <template>
@@ -63,27 +33,46 @@ const abrirAlerta = async (
 
     <ImageCaja />
 
+      <h2 class="text-lg font-bold text-gray-700 mb-8">
+     Haz click sobre las cajas para ver Elementales
+      <br />👉 
+    </h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-5 mt-10">
-
+  <!-- CAJA 1 -->
       <CardCajas
         title="✈ Caja 1"
         field1="PREEQUIPADO RH"
         field-color="#00F"
         field-text-color="white"
+                 @click="abrirAlerta(
+          'Elementales Caja 1',
+          '/imgCajas/preeq-RH.jpg',
+          'Elementales Caja 1'
+        )"
       />
-
+  <!-- CAJA 2 -->
       <CardCajas
         title="✈ Caja 2"
         field1="PREEQUIPADO LH"
         field-color="yellow"
         field-text-color="#1e40af"
+                 @click="abrirAlerta(
+          'Elementales Caja 2',
+          '/imgCajas/preeq-LH.jpg',
+          'Elementales Caja 2'
+        )"
       />
-
+  <!-- CAJA 3 -->
       <CardCajas
         title="✈ Caja 3"
         field1="KIT MECANIZADOS"
         field-color="gray"
         field-text-color="white"
+            @click="abrirAlerta(
+          'Elementales Caja 3',
+          '/imgCajas/preeq-kit.jpg',
+          'Elementales Caja 3'
+        )"
       />
 
       <!-- CAJA 4 -->
@@ -120,7 +109,7 @@ const abrirAlerta = async (
         field-text-color="white"
             @click="abrirAlerta(
           'Elementales Caja 6',
-          '/imgCajas/CarroFase1_LH.png',
+          '/imgCajas/fase4-preeq.jpg',
           'Elementales Caja 6'
         )"
       />
@@ -146,8 +135,8 @@ const abrirAlerta = async (
     :title="alerta.title"
     :image="alerta.image"
     :image-alt="alerta.imageAlt"
-    :image-width="400"
-    :image-height="400"
+    :image-width="450"
+    :image-height="450"
     confirm-button-text="OK"
     confirm-button-color="#2563eb"
     background-color="#dcfce7"
