@@ -89,7 +89,7 @@ import CardCarro from '~/components/CardCarro.vue'
          @click="
           abrirAlerta(
             'Elementales Caja 2',
-            '/imgCajas/F1-caja1-RH.jpg',
+            '/imgCajas/F1-caja1-LH.jpg',
             'Elementales Caja 2'
           )
         "
