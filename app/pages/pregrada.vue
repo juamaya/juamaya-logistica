@@ -24,7 +24,7 @@ const { alertRef, alerta, abrirAlerta } = useAlert()
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-5">
       <CardCajas
         title="✈  Caja 1"
-        field1="Pregrada 2"
+        field1="PREGRADA 2"
         field-color="brown"
         field-text-color="#fff"
         @click="
@@ -45,7 +45,7 @@ const { alertRef, alerta, abrirAlerta } = useAlert()
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-5 mt-5">
       <CardCajas
         title="  ✈  Caja 1 "
-        field1="Pregrada 3 RH"
+        field1="PREGRADA 3 RH"
         field-color="#00f"
         field-text-color="#fff"
         @click="
@@ -58,7 +58,7 @@ const { alertRef, alerta, abrirAlerta } = useAlert()
       />
       <CardCajas
         title="  ✈  Caja 2 "
-        field1="Pregrada 3 LH"
+        field1="PREGRADA 3 LH"
         field-color="yellow"
         field-text-color="#000"
         @click="

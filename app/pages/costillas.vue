@@ -34,7 +34,7 @@ const { alertRef, alerta, abrirAlerta } = useAlert()
     >
       <CardCajas
         title="✈  Caja 1"
-        field1="Costillas RH"
+        field1="COSTILLAS RH"
         field-color="blue"
         field-text-color="white"
         @click="
@@ -46,7 +46,7 @@ const { alertRef, alerta, abrirAlerta } = useAlert()
       />
       <CardCajas
         title="  ✈  Caja 2  "
-        field1="Costillas LH"
+        field1="COSTILLAS LH"
         field-color="yellow"
         field-text-color="black"
         @click="
@@ -59,9 +59,9 @@ const { alertRef, alerta, abrirAlerta } = useAlert()
       />
       <CardCajas
         title="✈  Caja 3"
-        field1="Costilla 0 - Herraje RH_LH"
+        field1="COSTILLA 0 - HERRAJE RH_LH"
         field-color="blue"
-        field-text-color="white"
+        field-text-color="yellow"
         @click="
           abrirAlerta(
             'Elementales Caja 3',

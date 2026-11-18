@@ -22,7 +22,7 @@ const imagenes = [
         <img
           src="/images/sonaca.png"
           alt="Fondo SONACA"
-          class="w-full h-full object-contain sm:object-cover md:object-cover object-center"
+          class="w-full h-full object-contain sm:object-cover md:object-cover lg:object-cover object-center"
         />
       </picture>
     </div>

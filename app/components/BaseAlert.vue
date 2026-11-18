@@ -1,4 +1,3 @@
-
 <script setup lang="ts">
 import Swal from 'sweetalert2'
 
@@ -75,7 +74,8 @@ const showAlert = async () => {
     background: props.backgroundColor,
 
     width: 'min(550px, 92vw)',
-    padding: '1.5rem',
+
+    padding: '.2rem',
 
     showCloseButton: true,
 
