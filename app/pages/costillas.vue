@@ -24,7 +24,7 @@ const { alertRef, alerta, abrirAlerta } = useAlert()
 
     <ImageCaja />
 
-     <h2 class="text-lg font-bold text-gray-700 mb-8 mt-5">
+    <h2 class="text-lg font-bold text-gray-700 mb-8 mt-5">
       Haz click sobre las cajas para ver Elementales
       <br />👉
     </h2>
@@ -41,8 +41,7 @@ const { alertRef, alerta, abrirAlerta } = useAlert()
             'Elementales Caja 1',
             '/imgCajas/cos-RH.jpg',
             'Elementales Caja 1'
-          )
-        "
+          )"
       />
       <CardCajas
         title="  ✈  Caja 2  "

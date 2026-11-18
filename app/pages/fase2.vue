@@ -62,6 +62,11 @@
         field-text-color="#000"
       />
     </div>
+
+        <h2 class="text-lg font-bold text-gray-700 mb-8 mt-5">
+      Haz click sobre las cajas para ver Elementales
+      <br />👉
+    </h2>
      <p class="text-xl font-bold text-black my-10">
         👉 Fase 2 LH
     </p>

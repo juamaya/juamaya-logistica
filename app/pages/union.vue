@@ -39,6 +39,11 @@ import CardMaletin from "~/components/CardMaletin.vue";
     </h1>
 
     <ImageCaja />
+
+        <h2 class="text-lg font-bold text-gray-700 mb-8 mt-5">
+      Haz click sobre las cajas para ver Elementales
+      <br />👉
+    </h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mx-5 mt-10">
       <CardCajas
         title="✈  Caja 1"
