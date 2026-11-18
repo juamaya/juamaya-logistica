@@ -131,7 +131,7 @@ import CardCarro from '~/components/CardCarro.vue'
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mx-5">
       <CardCarro
         title="Fase 1 RH"
-        image="/imgCajas/F1-RH-caja-costillas.png"
+        image="/imgCajas/F1-LH-caja-costillas.png"
         description="Ubicacion: Carro F1 RH "
       />
       <CardCarro
