@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import CardMaletin from "~/components/CardMaletin.vue";
+ 
+import { useAlert } from '@/composables/useAlert'
+const { alertRef, alerta, abrirAlerta } = useAlert()
 </script>
 <template>
   <div class="max-w-7xl mx-auto text-center">
@@ -50,24 +52,48 @@ import CardMaletin from "~/components/CardMaletin.vue";
         field1="UNION RH"
         field-color="#00F"
         field-text-color="white"
+         @click="
+          abrirAlerta(
+            'Elementales Caja 1',
+            '/imgCajas/Union-RH.jpg',
+            'Elementales Caja 1'
+          )"
       />
       <CardCajas
         title="  ✈  Caja 2  "
         field1="UNION LH"
         field-color="yellow"
         field-text-color="black"
+            @click="
+          abrirAlerta(
+            'Elementales Caja 2',
+            '/imgCajas/Union-LH.jpg',
+            'Elementales Caja 2'
+          )"
       />
       <CardCajas
         title="✈  Caja 3"
-        field1="KIT MECANIZADOS"
+        field1="KIT MECANIZADOS UNION"
         field-color="gray"
         field-text-color="white"
+            @click="
+          abrirAlerta(
+            'Elementales Caja 3',
+            '/imgCajas/Union-Kit.jpg',
+            'Elementales Caja 3'
+          )"
       />
       <CardCajas
         title="  ✈  Caja 4 "
-        field1="FASE 4 UNION RH_LH"
+        field1="1/2 FASE 4 UNION"
         field-color="brown"
         field-text-color="white"
+            @click="
+          abrirAlerta(
+            'Elementales Caja 1',
+            '/imgCajas/Union-F4.jpg',
+            'Elementales Caja 1'
+          )"
       />
     </div>
   </section>
@@ -81,6 +107,21 @@ import CardMaletin from "~/components/CardMaletin.vue";
       description="Ubicacion: H7"
     />
   </section>
+
+  <!-- UNA SOLA ALERTA PARA TODAS LAS TARJETAS -->
+  <BaseAlert
+    ref="alertRef"
+    :title="alerta.title"
+    :image="alerta.image"
+    :image-alt="alerta.imageAlt"
+    :image-width="450"
+    :image-height="450"
+    confirm-button-text="OK"
+    confirm-button-color="#2563eb"
+    background-color="#dcfce7"
+  />
+
+
 </template>
 
 <style scoped></style>

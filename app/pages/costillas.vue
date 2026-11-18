@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { useAlert } from '@/composables/useAlert'
-
 const { alertRef, alerta, abrirAlerta } = useAlert()
 </script>
+
+
 <template>
   <div class="max-w-7xl mx-auto text-center">
     <h1 class="font-bold text-black mb-8">
@@ -58,7 +59,7 @@ const { alertRef, alerta, abrirAlerta } = useAlert()
       />
       <CardCajas
         title="✈  Caja 3"
-        field1="Costilla 0 Herraje RH_LH"
+        field1="Costilla 0 - Herraje RH_LH"
         field-color="blue"
         field-text-color="white"
         @click="

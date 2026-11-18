@@ -49,7 +49,7 @@ const { alertRef, alerta, abrirAlerta } = useAlert()
       <!-- CAJA 3 -->
       <CardCajas
         title="✈ Caja 3"
-        field1="KIT MECANIZADOS"
+        field1="KIT MECANIZADOS PREEQ."
         field-color="gray"
         field-text-color="white"
         @click="
@@ -64,9 +64,9 @@ const { alertRef, alerta, abrirAlerta } = useAlert()
       <!-- CAJA 4 -->
       <CardCajas
         title="✈ Caja 4"
-        field1="FASE 3 RH"
-        field-color="#00f"
-        field-text-color="#fff"
+        field1="3/3 FASE 3 RH"
+        field-color="#0F0"
+        field-text-color="#00f"
         @click="
           abrirAlerta(
             'Elementales Caja 4',
@@ -79,9 +79,9 @@ const { alertRef, alerta, abrirAlerta } = useAlert()
       <!-- CAJA 5 -->
       <CardCajas
         title="✈ Caja 5"
-        field1="FASE 3 LH"
-        field-color="yellow"
-        field-text-color="#000"
+        field1="3/3 FASE 3 LH"
+        field-color="#0F0"
+        field-text-color="yellow"
         @click="
           abrirAlerta(
             'Elementales Caja 5',
@@ -94,7 +94,7 @@ const { alertRef, alerta, abrirAlerta } = useAlert()
       <!-- CAJA 6 -->
       <CardCajas
         title="✈ Caja 6"
-        field1="FASE 4 UNION RH_LH"
+        field1="2/2 FASE 4 UNION"
         field-color="brown"
         field-text-color="white"
         @click="
